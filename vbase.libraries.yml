@@ -1,0 +1,65 @@
+youtube:
+  css:
+    component:
+      css/youtube.css: {}
+
+dropzone:
+  remote: https://github.com/dropzone/dropzone
+  version: "v5.9.3"
+  license:
+    name: MIT
+    url: https://github.com/dropzone/dropzone/blob/v5.9.3/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/dropzone/dropzone.css: { }
+  js:
+    /libraries/dropzone/dropzone.min.js: { minified: true }
+
+jarallax:
+  remote: https://github.com/nk-o/jarallax
+  version: "v2.0.2"
+  license:
+    name: MIT
+    url: https://github.com/nk-o/jarallax/blob/v2.0.2/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/jarallax/jarallax.css: {}
+  js:
+    /libraries/jarallax/jarallax.min.js: {minified: true}
+
+jarallax.video:
+  remote: https://github.com/nk-o/jarallax
+  version: "v2.0.2"
+  license:
+    name: MIT
+    url: https://github.com/nk-o/jarallax/blob/v2.0.2/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/jarallax/jarallax-video.min.js: {minified: true}
+  dependencies:
+    - vbase/jarallax
+
+kjua:
+  remote: https://github.com/lrsjng/kjua
+  version: 'v0.9.0'
+  license:
+    name: MIT
+    url: https://github.com/lrsjng/kjua/blob/v0.9.0/README.md#license
+    gpl-compatible: true
+  js:
+    /libraries/kjua/kjua.min.js: { minified: true }
+
+swiper:
+  remote: https://github.com/nolimits4web/swiper
+  version: "v8.1.4"
+  license:
+    name: MIT
+    url: https://github.com/nolimits4web/swiper/blob/v8.1.4/LICENSE
+    gpl-compatible: true
+  css:
+    component:
+      /libraries/swiper/swiper-bundle.css: {}
+  js:
+    /libraries/swiper/swiper-bundle.min.js: {minified: true}

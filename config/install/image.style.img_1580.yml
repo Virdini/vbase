@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1580
+label: 'Image 1580'
+effects:
+  6e775f29-4c9b-460e-9263-09604bfc0f56:
+    uuid: 6e775f29-4c9b-460e-9263-09604bfc0f56
+    id: image_scale
+    weight: 1
+    data:
+      width: 1580
+      height: null
+      upscale: false

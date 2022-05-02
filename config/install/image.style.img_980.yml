@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_980
+label: 'Image 980'
+effects:
+  9f975b9b-44d3-4f66-a4fc-9bcda84129d1:
+    uuid: 9f975b9b-44d3-4f66-a4fc-9bcda84129d1
+    id: image_scale
+    weight: 1
+    data:
+      width: 980
+      height: null
+      upscale: false

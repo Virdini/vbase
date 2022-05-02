@@ -1,0 +1,4 @@
+theme: default
+defaults:
+  sender: vbase_phpmailer
+  formatter: vbase_phpmailer

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_text_layout
+    - paragraphs.paragraphs_type.text
+  module:
+    - options
+id: paragraph.text.field_p_text_layout
+field_name: field_p_text_layout
+entity_type: paragraph
+bundle: text
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: single_c
+default_value_callback: ''
+settings: {  }
+field_type: list_string

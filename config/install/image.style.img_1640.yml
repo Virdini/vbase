@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1640
+label: 'Image 1640'
+effects:
+  fa88b629-8262-482d-bb4f-0675aacc409a:
+    uuid: fa88b629-8262-482d-bb4f-0675aacc409a
+    id: image_scale
+    weight: 1
+    data:
+      width: 1640
+      height: null
+      upscale: false

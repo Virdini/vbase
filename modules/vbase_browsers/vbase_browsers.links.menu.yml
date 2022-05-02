@@ -1,0 +1,5 @@
+vbase_browsers.settings:
+  title: 'Browsers support'
+  parent: vbase.site_settings
+  description: 'Configure browsers support settings'
+  route_name: vbase_browsers.settings

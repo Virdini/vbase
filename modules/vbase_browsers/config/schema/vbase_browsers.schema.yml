@@ -1,0 +1,10 @@
+vbase_browsers.settings:
+  type: config_object
+  label: 'Browsers support'
+  mapping:
+    ie:
+      type: string
+      label: 'Internet Explorer'
+    ie_hide_badge:
+      type: boolean
+      label: 'Hide Internet Explorer badge'

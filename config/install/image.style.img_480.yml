@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_480
+label: 'Image 480'
+effects:
+  8ddae25a-6e6f-44e3-a8e8-d85e740e758b:
+    uuid: 8ddae25a-6e6f-44e3-a8e8-d85e740e758b
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false

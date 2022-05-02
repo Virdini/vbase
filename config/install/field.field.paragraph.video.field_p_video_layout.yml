@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_video_layout
+    - paragraphs.paragraphs_type.video
+  module:
+    - options
+id: paragraph.video.field_p_video_layout
+field_name: field_p_video_layout
+entity_type: paragraph
+bundle: video
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: c1260
+default_value_callback: ''
+settings: {  }
+field_type: list_string

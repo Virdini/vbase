@@ -1,0 +1,67 @@
+vbase.settings.smtp:
+  type: config_object
+  label: 'SMTP settings'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Send messages using SMTP server'
+    host:
+      label: 'Host'
+      type: string
+    username:
+      label: 'Username'
+      type: string
+    password:
+      label: 'Password'
+      type: string
+    from:
+      label: 'Send messages form name and email address'
+      type: string
+
+vbase.settings.users:
+  type: config_object
+  label: 'Authentication settings'
+  mapping:
+    login_by_email:
+      type: boolean
+      label: 'Login via email'
+    register_by_email:
+      type: boolean
+      label: 'Registration by email only'
+
+vbase.settings.tags:
+  type: config_object
+  label: 'Tags settings'
+  mapping:
+    telephone:
+      type: boolean
+      label: 'Disable telephone detection'
+    generator:
+      type: boolean
+      label: 'Show generator'
+    mobile:
+      type: boolean
+      label: 'Show mobile optimized'
+    viewport:
+      type: boolean
+      label: 'Show viewport'
+    shortlink:
+      type: boolean
+      label: 'Show shortlink'
+
+vbase.settings.cp:
+  type: config_object
+  label: 'Content protection settings'
+  mapping:
+    node:
+      label: 'Node bundles'
+      type: sequence
+      sequence:
+        type: string
+        label: 'Node bundle'
+    taxonomy:
+      label: 'Taxonomy vocabularies'
+      type: sequence
+      sequence:
+        type: string
+        label: 'Taxonomy vocabulary'

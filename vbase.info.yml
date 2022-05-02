@@ -1,0 +1,57 @@
+name: Virdini Base
+type: profile
+description: Install with commonly used features pre-configured for a project supported by Virdini.
+
+'interface translation project': vbase
+'interface translation server pattern': https://localize.virdini.com/drupal/vbase.%language.po
+
+core_version_requirement: ^9
+version: '9.0.0'
+
+distribution:
+  name: Virdini
+
+# Required modules
+dependencies:
+  - token
+
+# Modules to install to support the profile.
+install:
+  # core modules
+  - node
+  - taxonomy
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - views_ui
+  - field_ui
+  - options
+  - menu_ui
+  - shortcut
+  - automated_cron
+  - responsive_image
+  # contrib modules
+  - advagg_css_minify
+  - advagg_js_minify
+  - mailsystem
+  - google_tag
+  - imagick
+  - imce
+  - metatag
+  - paragraphs
+  - pathauto
+  - redirect_404
+  - simple_sitemap
+  - ckeditor_youtube
+  # viridni modules
+  - vtech
+
+# Themes to install to support the profile.
+themes:
+  - vadmin
+  - vmin

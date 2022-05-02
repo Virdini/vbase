@@ -1,0 +1,37 @@
+vbase.settings.index:
+  title: 'Site settings'
+  parent: system.admin_config_system
+  description: 'Configure main site settings.'
+  route_name: vbase.settings.index
+  weight: -100
+
+vbase.settings.main:
+  title: 'Main settings'
+  parent: vbase.settings.index
+  description: 'Configure site name, slogan and email address.'
+  route_name: vbase.settings.main
+  weight: -100
+
+vbase.settings.smtp:
+  title: 'SMTP settings'
+  parent: vbase.settings.index
+  description: 'Configure SMTP server settings for this site.'
+  route_name: vbase.settings.smtp
+
+vbase.settings.tags:
+  title: 'Tags settings'
+  parent: vbase.settings.index
+  description: 'Configure system tags and links for this site.'
+  route_name: vbase.settings.tags
+
+vbase.settings.content_protection:
+  title: 'Content protection'
+  parent: vbase.settings.index
+  description: 'Configure the protection of viewing the canonical pages of the entity from users.'
+  route_name: vbase.settings.content_protection
+
+vbase.settings.users:
+  title: 'Authentication settings'
+  parent: user.admin_index
+  description: 'Configure user authentication settings'
+  route_name: vbase.settings.users

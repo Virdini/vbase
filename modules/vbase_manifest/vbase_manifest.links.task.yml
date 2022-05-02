@@ -1,0 +1,4 @@
+vbase_manifest.settings:
+  title: 'Manifest Settings'
+  route_name: vbase_manifest.settings
+  base_route: vbase_manifest.settings

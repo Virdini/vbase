@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_360
+label: 'Image 360'
+effects:
+  9ade3bed-1c5d-47d8-86a8-efa945175948:
+    uuid: 9ade3bed-1c5d-47d8-86a8-efa945175948
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: null
+      upscale: false

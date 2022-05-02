@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_740
+label: 'Image 740'
+effects:
+  a7a8783c-2410-4176-9cac-e6d94889685d:
+    uuid: a7a8783c-2410-4176-9cac-e6d94889685d
+    id: image_scale
+    weight: 1
+    data:
+      width: 740
+      height: null
+      upscale: false

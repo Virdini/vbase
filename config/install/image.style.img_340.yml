@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_340
+label: 'Image 340'
+effects:
+  0ce8cf03-e67d-42ad-9fbd-c7d24449827c:
+    uuid: 0ce8cf03-e67d-42ad-9fbd-c7d24449827c
+    id: image_scale
+    weight: 1
+    data:
+      width: 340
+      height: null
+      upscale: false

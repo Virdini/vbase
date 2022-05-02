@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_460
+label: 'Image 460'
+effects:
+  df4a3441-c47d-48f4-8956-ebc30bfa222c:
+    uuid: df4a3441-c47d-48f4-8956-ebc30bfa222c
+    id: image_scale
+    weight: 1
+    data:
+      width: 460
+      height: null
+      upscale: false

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_760
+label: 'Image 760'
+effects:
+  048160b4-fa48-4794-b48a-b6f368b51d59:
+    uuid: 048160b4-fa48-4794-b48a-b6f368b51d59
+    id: image_scale
+    weight: 1
+    data:
+      width: 760
+      height: null
+      upscale: false

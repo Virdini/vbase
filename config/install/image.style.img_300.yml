@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_300
+label: 'Image 300'
+effects:
+  2f3314fe-294f-4c82-b60d-37c9fe746aea:
+    uuid: 2f3314fe-294f-4c82-b60d-37c9fe746aea
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

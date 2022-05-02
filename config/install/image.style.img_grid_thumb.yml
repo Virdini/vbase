@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_grid_thumb
+label: 'Image grid thumbnail'
+effects:
+  1d818084-21e6-4887-b3c3-9fbe92fd8a1b:
+    uuid: 1d818084-21e6-4887-b3c3-9fbe92fd8a1b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

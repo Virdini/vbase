@@ -1,0 +1,125 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.img_1260
+    - image.style.img_1580
+    - image.style.img_300
+    - image.style.img_340
+    - image.style.img_460
+    - image.style.img_620
+    - image.style.img_740
+    - image.style.img_940
+    - image.style.img_980
+  theme:
+    - vtcore
+id: 1580_workzone
+label: '1580 (work zone)'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.desktop1
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1260
+    breakpoint_id: vtcore.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.desktop
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_940
+    breakpoint_id: vtcore.tablet1
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.tablet1
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_980
+    breakpoint_id: vtcore.tablet_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.tablet_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_740
+    breakpoint_id: vtcore.mobile3_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.mobile3_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1260
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_460
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_940
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1580
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_340
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_740
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_980
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_300
+    breakpoint_id: vtcore.default
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.default
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_940
+    breakpoint_id: vtcore.default
+    multiplier: 3x
+breakpoint_group: vtcore
+fallback_image_style: img_1580

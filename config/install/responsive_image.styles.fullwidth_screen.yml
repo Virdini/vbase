@@ -1,0 +1,135 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.img_1000
+    - image.style.img_1320
+    - image.style.img_1640
+    - image.style.img_1920
+    - image.style.img_320
+    - image.style.img_360
+    - image.style.img_480
+    - image.style.img_640
+    - image.style.img_760
+  theme:
+    - vtcore
+id: fullwidth_screen
+label: 'Full width (screen)'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: '_original image_'
+    breakpoint_id: vtcore.desktop2_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.desktop1_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1640
+    breakpoint_id: vtcore.desktop_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.desktop_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1320
+    breakpoint_id: vtcore.tablet1_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.tablet1_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1000
+    breakpoint_id: vtcore.tablet_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.tablet_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_760
+    breakpoint_id: vtcore.mobile3_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1640
+    breakpoint_id: vtcore.mobile3_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.mobile3_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_640
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1320
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1920
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_480
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1000
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1320
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_360
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_760
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1000
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 3x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_320
+    breakpoint_id: vtcore.default
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_640
+    breakpoint_id: vtcore.default
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_1000
+    breakpoint_id: vtcore.default
+    multiplier: 3x
+breakpoint_group: vtcore
+fallback_image_style: img_1920

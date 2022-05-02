@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_320
+label: 'Image 320'
+effects:
+  63dab78a-7515-4bb3-8d7b-64fa26503b56:
+    uuid: 63dab78a-7515-4bb3-8d7b-64fa26503b56
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: false

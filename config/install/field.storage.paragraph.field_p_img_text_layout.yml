@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_p_img_text_layout
+field_name: field_p_img_text_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: 'Image left (work zone - 1260)'
+    -
+      value: left_1
+      label: 'Image left (work zone - 1580)'
+    -
+      value: right
+      label: 'Image right (work zone - 1260)'
+    -
+      value: right_1
+      label: 'Image right (work zone - 1580)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

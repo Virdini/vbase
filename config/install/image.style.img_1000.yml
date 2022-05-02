@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1000
+label: 'Image 1000'
+effects:
+  1b900e9c-4b53-4761-bb4c-0229d4e4c4fa:
+    uuid: 1b900e9c-4b53-4761-bb4c-0229d4e4c4fa
+    id: image_scale
+    weight: 1
+    data:
+      width: 1000
+      height: null
+      upscale: false

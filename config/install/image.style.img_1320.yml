@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1320
+label: 'Image 1320'
+effects:
+  9c0c4148-4beb-4aec-9196-fd9dcb5ff89f:
+    uuid: 9c0c4148-4beb-4aec-9196-fd9dcb5ff89f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1320
+      height: null
+      upscale: false

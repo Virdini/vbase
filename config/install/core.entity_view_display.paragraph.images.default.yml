@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_p_imgs
+    - field.field.paragraph.images.field_p_imgs_layout
+    - field.field.paragraph.images.field_p_title
+    - image.style.img_grid_thumb
+    - paragraphs.paragraphs_type.images
+  module:
+    - image
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_p_imgs:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: img_grid_thumb
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_imgs_layout: true

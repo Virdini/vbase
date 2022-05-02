@@ -1,0 +1,9 @@
+services:
+  vbase.generator:
+    class: Drupal\vbase\Generator
+    arguments: ['@entity_type.manager', '@transliteration']
+  vbase.file_event.subscriber:
+    class: Drupal\vbase\EventSubscriber\FileUploadEventSubscriber
+    arguments: ['@transliteration']
+    tags:
+      - { name: event_subscriber }

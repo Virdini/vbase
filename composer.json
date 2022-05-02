@@ -1,0 +1,46 @@
+{
+  "name": "virdini/vbase",
+  "description": "Base profile with commonly used features pre-configured for a project supported by Virdini.",
+  "type": "drupal-custom-profile",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://virdini.com",
+  "support": {
+    "email": "tech@virdini.com",
+    "source": "https://github.com/Virdini/vbase"
+  },
+  "require": {
+    "drupal/core-recommended": "^9",
+    "virdini/vtech": "^9",
+    "virdini/vspam": "^9",
+    "virdini/vadmin": "^9",
+    "virdini/vtcore": "^9",
+    "drupal/admin_toolbar": "^3.1",
+    "drupal/advagg": "^4.1",
+    "drupal/ctools": "^3.7",
+    "drupal/ckeditor_youtube": "^1.4",
+    "drupal/entity_reference_revisions": "^1.9",
+    "drupal/google_tag": "^1.5",
+    "drupal/imagick": "^1.5",
+    "drupal/imce": "^2.4",
+    "drupal/mailsystem": "^4.3",
+    "drupal/metatag": "^1.19",
+    "drupal/paragraphs": "^1.14",
+    "drupal/pathauto": "^1.10",
+    "drupal/redirect": "^1.7",
+    "drupal/simple_sitemap": "^4.1",
+    "drupal/token": "^1.10",
+    "drupal/field_group": "^3.2",
+    "drupal/views_custom_cache_tag": "^1.2",
+    "phpmailer/phpmailer": "^6.6.0"
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "file-mapping": {
+        "[web-root]/sites/.gitignore": "assets/scaffold/sites.gitignore",
+        "[web-root]/sites/virdini.development.services.yml": "assets/scaffold/virdini.development.services.yml",
+        "[web-root]/sites/default/default.settings.php": "assets/scaffold/default.settings.php",
+        "[web-root]/sites/default/dev.settings.php": "assets/scaffold/dev.settings.php"
+      }
+    }
+  }
+}

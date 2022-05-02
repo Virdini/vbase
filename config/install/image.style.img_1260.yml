@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1260
+label: 'Image 1260'
+effects:
+  cc0a24a8-61ec-41b6-b24c-bc14306c0488:
+    uuid: cc0a24a8-61ec-41b6-b24c-bc14306c0488
+    id: image_scale
+    weight: 1
+    data:
+      width: 1260
+      height: null
+      upscale: false

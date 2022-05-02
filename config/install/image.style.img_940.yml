@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_940
+label: 'Image 940'
+effects:
+  cf263d74-103c-482d-aff3-f1bcc900fd7a:
+    uuid: cf263d74-103c-482d-aff3-f1bcc900fd7a
+    id: image_scale
+    weight: 1
+    data:
+      width: 940
+      height: null
+      upscale: false

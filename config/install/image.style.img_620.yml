@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_620
+label: 'Image 620'
+effects:
+  b67c86ca-924f-4c07-9362-2d98ea93f565:
+    uuid: b67c86ca-924f-4c07-9362-2d98ea93f565
+    id: image_scale
+    weight: 1
+    data:
+      width: 620
+      height: null
+      upscale: false

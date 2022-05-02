@@ -1,0 +1,11 @@
+name: Virdini Base Manifest
+type: module
+description: Configure manifest settings.
+package: Virdini
+configure: vbase_manifest.settings
+
+'interface translation project': vbase_manifest
+'interface translation server pattern': https://localize.virdini.com/drupal/vbase_manifest.%language.po
+
+core_version_requirement: ^9
+version: '9.0.0'

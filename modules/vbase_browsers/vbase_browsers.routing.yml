@@ -1,0 +1,7 @@
+vbase_browsers.settings:
+  path: '/admin/config/system/site-settings/browsers'
+  defaults:
+    _form: 'Drupal\vbase_browsers\Form\BrowsersSupportSettings'
+    _title: 'Browsers support'
+  requirements:
+    _permission: 'vbase site settings'

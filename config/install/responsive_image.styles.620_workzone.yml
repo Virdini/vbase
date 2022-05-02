@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.img_300
+    - image.style.img_340
+    - image.style.img_460
+    - image.style.img_620
+  theme:
+    - vtcore
+id: 620_workzone
+label: '620 (work zone)'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.mobile2_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_460
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.mobile1_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_340
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.mobile_up
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_300
+    breakpoint_id: vtcore.default
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: img_620
+    breakpoint_id: vtcore.default
+    multiplier: 2x
+breakpoint_group: vtcore
+fallback_image_style: img_620

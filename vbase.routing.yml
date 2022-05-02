@@ -1,0 +1,62 @@
+vbase.settings.index:
+  path: '/admin/config/system/site-settings'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Site settings'
+  requirements:
+    _permission: 'access administration pages'
+
+vbase.settings.main:
+  path: '/admin/config/system/site-settings/main'
+  defaults:
+    _form: 'Drupal\vbase\Form\SettingsMain'
+    _title: 'Main settings'
+  requirements:
+    _permission: 'vbase site settings'
+
+vbase.settings.tags:
+  path: '/admin/config/system/site-settings/tags'
+  defaults:
+    _form: 'Drupal\vbase\Form\SettingsTags'
+    _title: 'Tags settings'
+  requirements:
+    _permission: 'vbase site settings'
+
+vbase.settings.smtp:
+  path: '/admin/config/system/site-settings/smtp'
+  defaults:
+    _form: 'Drupal\vbase\Form\SettingsSMTP'
+    _title: 'SMTP settings'
+  requirements:
+    _permission: 'vbase settings smtp'
+
+vbase.settings.content_protection:
+  path: '/admin/config/system/site-settings/content-protection'
+  defaults:
+    _form: 'Drupal\vbase\Form\SettingsContentProtection'
+    _title: 'Content protection settings'
+  requirements:
+    _permission: 'vbase settings content protection'
+
+vbase.settings.users:
+  path: '/admin/config/people/users/authentication'
+  defaults:
+    _form: 'Drupal\vbase\Form\SettingsUsers'
+    _title: 'Authentication settings'
+  requirements:
+    _permission: 'administer account settings'
+
+vbase.config.batch_export:
+  path: '/admin/config/development/configuration/full/vbase-batch'
+  defaults:
+    _form: '\Drupal\vbase\Form\ConfigBatchExport'
+    _title: 'Batch export'
+  requirements:
+    _permission: 'export configuration'
+
+vbase.config.download:
+  path: '/admin/config/development/configuration/full/vbase-batch-download'
+  defaults:
+    _controller: '\Drupal\vbase\Controller\ConfigBatchExportDownload::download'
+  requirements:
+    _permission: 'export configuration'

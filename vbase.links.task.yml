@@ -1,0 +1,9 @@
+vbase.settings.main:
+  title: 'Main settings'
+  route_name: vbase.settings.main
+  base_route: vbase.settings.main
+
+vbase.config.batch_export:
+  title: 'Batch export'
+  route_name: vbase.config.batch_export
+  parent_id: config.export

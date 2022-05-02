@@ -1,0 +1,5 @@
+vbase_manifest.settings:
+  title: 'Manifest settings'
+  parent: vbase.site_settings
+  description: 'Configure manifest settings'
+  route_name: vbase_manifest.settings

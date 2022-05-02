@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - contextual
+    - filter
+    - google_tag
+    - metatag
+    - node
+    - paragraphs
+    - path
+    - redirect
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - vbase
+id: admin
+label: Admin
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access shortcuts'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer google tag manager'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'administer shortcuts'
+  - 'administer taxonomy'
+  - 'bypass node access'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'switch shortcut sets'
+  - 'use text format full_html'
+  - 'vbase delayed publishing all'
+  - 'vbase site settings'
+  - 'vbase view protected content'
+  - 'view own unpublished content'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

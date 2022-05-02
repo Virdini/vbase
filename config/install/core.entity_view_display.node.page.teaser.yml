@@ -1,0 +1,23 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_paragraphs
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content: {  }
+hidden:
+  body: true
+  field_metatags: true
+  field_paragraphs: true
+  links: true
+  pubdate: true
+  unpubdate: true

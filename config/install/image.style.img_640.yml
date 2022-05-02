@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_640
+label: 'Image 640'
+effects:
+  66920c8a-c433-42b7-bd38-66203b693e49:
+    uuid: 66920c8a-c433-42b7-bd38-66203b693e49
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: null
+      upscale: false

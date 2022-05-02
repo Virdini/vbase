@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_p_img
+    - field.field.paragraph.image.field_p_img_layout
+    - field.field.paragraph.image.field_p_title
+    - paragraphs.paragraphs_type.image
+    - responsive_image.styles.fullwidth_screen
+  module:
+    - responsive_image
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_p_img:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: fullwidth_screen
+      image_link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_img_layout: true

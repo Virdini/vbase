@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function vbase_browsers_page_attachments(array &$attachments) {
+  $config = \Drupal::config('vbase_browsers.settings');
+  vbase_add_cacheable_dependency($attachments, $config);
+
+  // Internet Explorer
+  if ($config->get('ie') && !$config->get('ie_hide_badge')) {
+    $attachments['#attached']['library'][] = 'vbase_browsers/ie.'. $config->get('ie');
+  }
+}

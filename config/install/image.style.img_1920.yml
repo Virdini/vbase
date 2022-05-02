@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_1920
+label: 'Image 1920'
+effects:
+  08739d53-614e-4350-b3d3-dc007690696f:
+    uuid: 08739d53-614e-4350-b3d3-dc007690696f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

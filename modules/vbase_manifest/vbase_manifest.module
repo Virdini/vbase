@@ -1,0 +1,46 @@
+<?php
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function vbase_manifest_page_attachments(array &$attachments) {
+  $config = \Drupal::config('vbase_manifest.settings');
+  vbase_add_cacheable_dependency($attachments, $config);
+  if (($short = $config->get('short_name')) || $config->get('name')) {
+    $attachments['#attached']['html_head_link'][] = [[
+      'rel' => 'manifest',
+      'href' => Url::fromRoute('vbase_manifest.json')->setAbsolute()->toString(),
+    ]];
+    if ($short) {
+      $attachments['#attached']['html_head'][] = [[
+        '#type' => 'html_tag',
+        '#tag' => 'meta',
+        '#attributes' => [
+          'name' => 'apple-mobile-web-app-title',
+          'content' => $short,
+        ],
+      ], 'apple-mobile-web-app-title'];
+      $attachments['#attached']['html_head'][] = [[
+        '#type' => 'html_tag',
+        '#tag' => 'meta',
+        '#attributes' => [
+          'name' => 'application-name',
+          'content' => $short,
+        ],
+      ], 'application-name'];
+    }
+    \Drupal::service('vbase_manifest')->setIconLinks($attachments);
+  }
+  if ($config->get('theme_color')) {
+    $attachments['#attached']['html_head'][] = [[
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' => 'theme-color',
+        'content' => $config->get('theme_color'),
+      ],
+    ], 'theme-color'];
+  }
+}

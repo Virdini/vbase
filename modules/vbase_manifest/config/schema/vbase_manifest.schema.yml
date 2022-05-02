@@ -1,0 +1,31 @@
+vbase_manifest.settings:
+  type: config_object
+  label: 'Manifest settings'
+  mapping:
+    short_name:
+      translatable: true
+      type: label
+      label: 'Short name'
+    name:
+      translatable: true
+      type: label
+      label: 'Name'
+    description:
+      translatable: true
+      type: label
+      label: 'Description'
+    theme_color:
+      type: string
+      label: 'Theme color'
+    background_color:
+      type: string
+      label: 'Background color'
+    mask_icon_color:
+      type: string
+      label: 'Mask-icon color'
+    display:
+      type: string
+      label: 'Display'
+    orientation:
+      type: string
+      label: 'Orientation'

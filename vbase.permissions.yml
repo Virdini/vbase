@@ -1,0 +1,24 @@
+vbase site settings:
+  title: 'Site settings'
+  description: 'Configure main site settings.'
+
+vbase settings smtp:
+  title: 'SMTP settings'
+  description: 'Configure SMTP server settings for this site.'
+  restrict access: true
+
+vbase settings content protection:
+  title: 'Content protection settings'
+  description: 'Configure the protection of viewing the canonical pages of the entity from users.'
+
+vbase view protected content:
+  title: 'View protected content'
+
+vbase delayed publishing all:
+  title: 'Access to all delayed publishing fields'
+
+vbase term all create:
+  title: 'Create all taxonomy terms'
+
+permission_callbacks:
+  - Drupal\vbase\NodePermissions::nodeTypePermissions

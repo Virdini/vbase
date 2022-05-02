@@ -1,0 +1,15 @@
+vbase_manifest.settings:
+  path: '/admin/config/system/site-settings/manifest'
+  defaults:
+    _form: 'Drupal\vbase_manifest\Form\ManifestSettings'
+    _title: 'Manifest settings'
+  requirements:
+    _permission: 'vbase site settings'
+
+vbase_manifest.json:
+  path: '/manifest.json'
+  defaults:
+    _controller: '\Drupal\vbase_manifest\Controller\Manifest::build'
+    _title: 'Manifest'
+  requirements:
+    _access: 'TRUE'

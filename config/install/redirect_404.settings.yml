@@ -1,0 +1,3 @@
+row_limit: 10000
+pages: "/.well-known/*\r\n/apple-app-*\r\n/wp-content*\r\n/wp-login.*\r\n/assets/modules*\r\n/wp-includes*\r\n/wp-admin*\r\n/xmlrpc*\n"
+suppress_404: true

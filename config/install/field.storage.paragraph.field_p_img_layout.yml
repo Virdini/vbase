@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_p_img_layout
+field_name: field_p_img_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fullwidth
+      label: 'Full width (screen)'
+    -
+      value: c620
+      label: 'Center 620 (work zone)'
+    -
+      value: c940
+      label: 'Center 940 (work zone)'
+    -
+      value: c1260
+      label: 'Center 1260 (work zone)'
+    -
+      value: c1580
+      label: 'Center 1580 (work zone)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
