@@ -36,10 +36,22 @@
   "extra": {
     "drupal-scaffold": {
       "file-mapping": {
-        "[web-root]/sites/.gitignore": "assets/scaffold/sites.gitignore",
-        "[web-root]/sites/virdini.development.services.yml": "assets/scaffold/virdini.development.services.yml",
         "[web-root]/sites/default/default.settings.php": "assets/scaffold/default.settings.php",
-        "[web-root]/sites/default/dev.settings.php": "assets/scaffold/dev.settings.php"
+        "[web-root]/sites/.gitignore": {
+          "mode": "replace",
+          "path": "assets/scaffold/sites.gitignore",
+          "overwrite": false
+        },
+        "[web-root]/sites/virdini.development.services.yml": {
+          "mode": "replace",
+          "path": "assets/scaffold/virdini.development.services.yml",
+          "overwrite": false
+        },
+        "[web-root]/sites/default/dev.settings.php": {
+          "mode": "replace",
+          "path": "assets/scaffold/dev.settings.php",
+          "overwrite": false
+        }
       }
     }
   }
