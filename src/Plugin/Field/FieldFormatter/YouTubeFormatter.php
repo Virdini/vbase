@@ -10,9 +10,10 @@ use Drupal\Core\Field\FieldItemListInterface;
  *
  * @FieldFormatter(
  *   id = "vbase_youtube",
- *   label = @Translation("vbase YouTube"),
+ *   label = @Translation("YouTube"),
  *   field_types = {
- *     "vbase_youtube"
+ *     "vbase_youtube",
+ *     "vbase_youtube_title"
  *   }
  * )
  */
@@ -23,15 +24,18 @@ class YouTubeFormatter extends FormatterBase {
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = [];
+
     foreach ($items as $delta => $item) {
       $elements[$delta] = [
         '#theme' => 'vbase_youtube',
         '#id' => $item->value,
+        '#title' => $item->title,
         '#width' => $item->width,
         '#height' => $item->height,
         '#responsive' => $item->resp,
       ];
     }
+
     return $elements;
   }
 

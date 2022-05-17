@@ -396,6 +396,7 @@ function vbase_theme() {
       'variables' => [
         'attributes' => [],
         'id' => NULL,
+        'title' => NULL,
         'width' => NULL,
         'height' => NULL,
         'responsive' => NULL,

@@ -12,7 +12,7 @@ use Drupal\Core\TypedData\DataDefinition;
  * @FieldType(
  *   id = "vbase_youtube",
  *   module = "vbase",
- *   label = @Translation("vbase YouTube"),
+ *   label = @Translation("YouTube"),
  *   category = @Translation("Virdini"),
  *   default_widget = "vbase_youtube",
  *   default_formatter = "vbase_youtube"
@@ -62,6 +62,7 @@ class YouTubeItem extends FieldItemBase {
       ->setLabel(t('Width'));
     $properties['height'] = DataDefinition::create('integer')
       ->setLabel(t('Height'));
+
     return $properties;
   }
 
@@ -70,6 +71,7 @@ class YouTubeItem extends FieldItemBase {
    */
   public function isEmpty() {
     $value = $this->get('value')->getValue();
+
     return $value === NULL || $value === '';
   }
 

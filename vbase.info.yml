@@ -6,7 +6,7 @@ description: Install with commonly used features pre-configured for a project su
 'interface translation server pattern': https://localize.virdini.com/drupal/vbase.%language.po
 
 core_version_requirement: ^9
-version: '9.0.1'
+version: '9.0.2'
 
 distribution:
   name: Virdini
