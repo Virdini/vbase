@@ -158,8 +158,3 @@ $settings['skip_permissions_hardening'] = TRUE;
  * Disable AdvAgg CSS and JS aggregation.
  */
 $config['advagg.settings']['enabled'] = FALSE;
-
-/**
- * Disable OPcache.
- */
-ini_set('opcache.enable', FALSE);
