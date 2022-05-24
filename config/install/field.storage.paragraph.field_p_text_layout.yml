@@ -12,6 +12,9 @@ settings:
   allowed_values:
     -
       value: single_l
+      label: 'Single column (left, work zone - 940)'
+    -
+      value: single_l_0
       label: 'Single column (left, work zone - 1260)'
     -
       value: single_l_1
@@ -21,6 +24,9 @@ settings:
       label: 'Single column (center)'
     -
       value: single_r
+      label: 'Single column (right, work zone - 940)'
+    -
+      value: single_r_0
       label: 'Single column (right, work zone - 1260)'
     -
       value: single_r_1
