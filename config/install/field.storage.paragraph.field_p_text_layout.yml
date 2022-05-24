@@ -34,6 +34,12 @@ settings:
     -
       value: double
       label: 'Double column (center)'
+    -
+      value: title_l
+      label: 'Highlighted title (left)'
+    -
+      value: title_r
+      label: 'Highlighted title (right)'
   allowed_values_function: ''
 module: options
 locked: false
