@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_810
+label: 'Image 810'
+effects:
+  8c052591-a4bd-4308-aa4d-105a21cb8526:
+    uuid: 8c052591-a4bd-4308-aa4d-105a21cb8526
+    id: image_scale
+    weight: 1
+    data:
+      width: 810
+      height: null
+      upscale: false

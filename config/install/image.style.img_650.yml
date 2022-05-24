@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_650
+label: 'Image 650'
+effects:
+  281779b1-70d4-41ab-a0ad-c7bb0c5c62ee:
+    uuid: 281779b1-70d4-41ab-a0ad-c7bb0c5c62ee
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: null
+      upscale: false

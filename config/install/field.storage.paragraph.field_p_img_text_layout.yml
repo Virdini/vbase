@@ -17,11 +17,17 @@ settings:
       value: left_1
       label: 'Image left (work zone - 1580)'
     -
+      value: left_o
+      label: 'Image left (outside)'
+    -
       value: right
       label: 'Image right (work zone - 1260)'
     -
       value: right_1
       label: 'Image right (work zone - 1580)'
+    -
+      value: right_o
+      label: 'Image right (outside)'
   allowed_values_function: ''
 module: options
 locked: false

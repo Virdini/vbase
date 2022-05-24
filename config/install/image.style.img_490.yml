@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: img_490
+label: 'Image 490'
+effects:
+  05607653-7bbd-404e-b61d-82f765b902a8:
+    uuid: 05607653-7bbd-404e-b61d-82f765b902a8
+    id: image_scale
+    weight: 1
+    data:
+      width: 490
+      height: null
+      upscale: false
