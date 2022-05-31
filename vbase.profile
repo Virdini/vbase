@@ -316,8 +316,16 @@ function vbase_form_alter(&$form, FormStateInterface $form_state, $form_id) {
         $form['name']['#type'] = 'email';
         $form['name']['#maxlength'] = Email::EMAIL_MAX_LENGTH;
         $form['name']['#element_validate'][] = 'vbase_user_login_by_email';
-        $form['name']['#description'] = t('Enter your email address.');
-        $form['pass']['#description'] = t('Enter the password that accompanies your email address.');
+
+        // Change name field description
+        if (isset($form['name']['#description']) && $form['name']['#description']) {
+          $form['name']['#description'] = t('Enter your email address.');
+        }
+
+        // Change pass field description
+        if (isset($form['pass']['#description']) && $form['pass']['#description']) {
+          $form['pass']['#description'] = t('Enter the password that accompanies your email address.');
+        }
       }
       break;
 
