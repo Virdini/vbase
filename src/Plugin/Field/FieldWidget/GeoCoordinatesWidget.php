@@ -26,6 +26,7 @@ class GeoCoordinatesWidget extends WidgetBase {
     $properties = $items->getItemDefinition()->getPropertyDefinitions();
     $element['#type'] = $element['#title_display'] == 'invisible' ? 'container' : 'fieldset';
     $element['#attributes']['class'][] = 'vbase-field-widget-grid';
+    $element['#attributes']['class'][] = 'vbase-field-geocoordinates-widget-grid';
     $element['latitude'] = [
       '#type' => 'textfield',
       '#title' => $properties['latitude']->getLabel(),
@@ -38,11 +39,19 @@ class GeoCoordinatesWidget extends WidgetBase {
       '#default_value' => $items[$delta]->longitude,
       '#required' => $element['#required'],
     ];
-    $element['label'] = [
-      '#type' => 'textfield',
-      '#title' => $properties['label']->getLabel(),
-      '#default_value' => $items[$delta]->label,
-    ];
+
+    // Add label field
+    if (isset($properties['label'])) {
+      $element['label'] = [
+        '#type' => 'textfield',
+        '#title' => $properties['label']->getLabel(),
+        '#default_value' => $items[$delta]->label,
+        '#wrapper_attributes' => [
+          'class' => ['vbase-field-geocoordinates-widget-label'],
+        ],
+      ];
+    }
+
     return $element;
   }
 
