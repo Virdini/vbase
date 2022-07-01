@@ -53,10 +53,10 @@ kjua:
 
 swiper:
   remote: https://github.com/nolimits4web/swiper
-  version: "v8.1.4"
+  version: "v8.2.6"
   license:
     name: MIT
-    url: https://github.com/nolimits4web/swiper/blob/v8.1.4/LICENSE
+    url: https://github.com/nolimits4web/swiper/blob/v8.2.6/LICENSE
     gpl-compatible: true
   css:
     component:
